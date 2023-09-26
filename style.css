@@ -151,7 +151,7 @@ header section .profile_post_follow_bx{
   height: 73%;
   /* border: 1px solid #000; */
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 header section .profile_post_follow_bx .profile_bx{
   width: 250px;
@@ -310,9 +310,10 @@ header section .profile_post_follow_bx .post_follow_bx .post{
   border-radius: 8px;
 }
 header section .profile_post_follow_bx .post_follow_bx .follow_bx{
-  width: 20px;
+  width: 250px;
   height: auto;
   margin-left: 15px;
+  /* border: 1px solid #000; */
 }
 header section .profile_post_follow_bx .post_follow_bx .post nav{
   border-radius: 8px 8px 0px 0px;
@@ -350,6 +351,25 @@ header section .profile_post_follow_bx .post_follow_bx .post .post_main_bx{
   width: 100%;
   height: 90%;
   /* border: 1px solid rgb(0, 0, 0, .1); */
+  overflow: auto;
+}
+header section .profile_post_follow_bx .post_follow_bx .post .post_main_bx::-webkit-scrollbar{
+  width: 5px;
+  background: rgb(0, 0, 0, .1);
+  border-radius: 20px;
+  visibility: hidden;
+}
+header section .profile_post_follow_bx .post_follow_bx .post .post_main_bx::-webkit-scrollbar-thumb{
+  width: 5px;
+  background: rgb(0, 0, 0,  .2);
+  border-radius: 20px;
+  visibility: hidden;
+}
+header section .profile_post_follow_bx .post_follow_bx .post .post_main_bx:hover:-webkit-scrollbar{
+  visibility: visible;
+}
+header section .profile_post_follow_bx .post_follow_bx .post .post_main_bx:hover::-webkit-scrollbar-thumb{
+  visibility: visible;
 }
 header section .profile_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx{
   width: 100%;
@@ -464,4 +484,176 @@ header section .profile_post_follow_bx .post_follow_bx .post .post_main_bx .post
 }
 header section .profile_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content .tweet_card_social_data .tweet_social_card:nth-child(3) i{
   color: red;
+}
+header section .profile_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content .image_post_bx{
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-top: 10px;
+}
+header section .profile_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content .image_post_bx img{
+  width: 130px;
+  height: 90px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+header section .profile_post_follow_bx .post_follow_bx .follow_bx .trend_for_you{
+ width: 100%;
+ height: auto;
+ background: #fff;
+ box-shadow: 0px 0px 20px rgb(0, 0, 0, .1);
+ border-radius: 5px;
+}
+header section .profile_post_follow_bx .post_follow_bx .follow_bx .trend_for_you nav{
+ width: 100%;
+ height: auto;
+ padding: 15px;
+ align-items: center;
+ border-radius: 8px 8px 0px 0px;
+ border-bottom: 1px solid rgb(0, 0, 0, .1);
+}
+header section .profile_post_follow_bx .post_follow_bx .follow_bx .trend_for_you nav h6{
+ font-size: 12px;
+ color: #000;
+ padding: 0;
+}
+header section .profile_post_follow_bx .post_follow_bx .follow_bx .trend_for_you .trend_bx{
+  width: 100%;
+  height: auto;
+  padding: 15px 15px 0px 15px;
+}
+header section .profile_post_follow_bx .post_follow_bx .follow_bx .trend_for_you .trend_bx li{
+ list-style-type: none;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 5px 0px;
+}
+header section .profile_post_follow_bx .post_follow_bx .follow_bx .trend_for_you .trend_bx li a{
+ text-decoration: none;
+ font-size: 12px;
+ font-weight: 600;
+ color: #000;
+}
+header section .profile_post_follow_bx .post_follow_bx .follow_bx .trend_for_you .trend_bx li a p{
+ text-decoration: none;
+ font-size: 10px;
+ font-weight: 500;
+ color: rgb(0, 0, 0, .4);
+}
+header section .profile_post_follow_bx .post_follow_bx .follow_bx .trend_for_you .trend_bx li i{
+ text-decoration: none;
+ font-size: 12px;
+}
+header section .profile_post_follow_bx .post_follow_bx .follow_bx .trend_for_you .trend_bx .rate button{
+ border: none;
+ outline: none;
+ background: none;
+ margin-right: 5px;
+ color: rgb(0, 0, 0, .6);
+ transition: .3s linear;
+ cursor: pointer;
+}
+header section .profile_post_follow_bx .post_follow_bx .follow_bx .trend_for_you .trend_bx .rate button:hover{
+ color: rgb(0, 0, 0);
+}
+header section .profile_post_follow_bx .post_follow_bx .follow_bx .trend_for_you .trend_bx .rate button i{
+ margin-right: 5px;
+}
+header section .profile_post_follow_bx .post_follow_bx .follow_bx .trend_for_you .trend_bx .rate .interest{
+ height: 0;
+ overflow: hidden;
+}
+header section .profile_post_follow_bx .post_follow_bx .follow_bx .trend_for_you .trend_bx .see_more{
+ width: 100%;
+ border: none;
+ background: none;
+ outline: none;
+ color: rgb(0, 0, 0, .4);
+ font-size: 11px;
+ font-weight: 600;
+ padding: 10px 0px;
+ text-align: center;
+ transition: .3s linear;
+ cursor: pointer;
+}
+header section .profile_post_follow_bx .post_follow_bx .follow_bx .trend_for_you .trend_bx .see_more:hover{
+ color: rgb(0, 0, 0);
+}
+header section .profile_post_follow_bx .post_follow_bx .follow_bx .you_should_follow{
+ margin-top: 15px;
+}
+header section .profile_post_follow_bx .post_follow_bx .follow_bx .you_should_follow .follow_bx{
+ width: auto;
+ height: auto;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ margin: 5px 15px 0px 15px;
+}
+header section .profile_post_follow_bx .post_follow_bx .follow_bx .you_should_follow .follow_bx .follow_profile_name{
+ display: flex;
+ align-items: center;
+ margin-top: 10px;
+ width: 60%;
+}
+header section .profile_post_follow_bx .post_follow_bx .follow_bx .you_should_follow .follow_bx .follow_profile_name img{
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+}
+header section .profile_post_follow_bx .post_follow_bx .follow_bx .you_should_follow .follow_bx .follow_profile_name .user_name{
+ margin-left: 10px;
+ width: 80%;
+}
+header section .profile_post_follow_bx .post_follow_bx .follow_bx .you_should_follow .follow_bx .follow_profile_name .user_name .user_name_follow{
+ color: #000;
+ display: flex;
+ align-items: center;
+}
+header section .profile_post_follow_bx .post_follow_bx .follow_bx .you_should_follow .follow_bx .follow_profile_name .user_name .user_name_follow h6{
+ color: #000;
+ padding: 0;
+ width: 100%;
+ font-size: 12px;
+ overflow: hidden;
+ white-space: nowrap;
+ text-overflow: ellipsis;
+}
+header section .profile_post_follow_bx .post_follow_bx .follow_bx .you_should_follow .follow_bx .follow_profile_name .user_name .user_name_follow img{
+ width: 15px;
+ height: 15px;
+ margin-left: 5px;
+}
+header section .profile_post_follow_bx .post_follow_bx .follow_bx .you_should_follow .follow_bx .follow_profile_name .user_name p{
+ font-size: 11px;
+ color: rgb(0, 0, 0, .4);
+ font-weight: 600;
+}
+header section .profile_post_follow_bx .post_follow_bx .follow_bx .you_should_follow .follow_bx button{
+ border: none;
+ outline: none;
+ padding: 8px 12px;
+ background: #1ca1f1;
+ color: #fff;
+ border-radius: 20px;
+ font-size: 10px;
+ transition: .3s linear;
+ cursor: pointer;
+}
+header section .profile_post_follow_bx .post_follow_bx .follow_bx .you_should_follow .follow_bx button:hover{
+ background: rgb(28, 161, 241, .5);
+}
+header section .profile_post_follow_bx .post_follow_bx .follow_bx .you_should_follow .see_more{
+  width: 100%;
+  border: none;
+  outline: none;
+  color: rgb(0, 0, 0, .4);
+  background: none;
+  padding: 10px 0px;
+  transition: .3s linear;
+  cursor: pointer;
+}
+header section .profile_post_follow_bx .post_follow_bx .follow_bx .you_should_follow .see_more:hover{
+  color: rgb(0, 0, 0);
 }
